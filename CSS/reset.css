@@ -1,0 +1,490 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Brasil*/
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@1.500 & display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Poppins';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1{
+	font-size:100px;
+}
+footer{
+	position: relative;
+	width: 500;
+	height: 500;
+}
+:root{
+    --branco-principal: WHITE;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'inter';
+        --branco: linear-gradient(to right, rgb(129, 129, 129), black);;
+        --preto: rgb(0,0,0);
+        --azul: rgb(97, 96, 96);
+        --azul-escuro: #27408b;
+}
+body{
+    font-family: 'Poppins';
+    background-image: linear-gradient(to right, rgba(113, 214, 18, 0.425),rgba(253, 249, 37, 0.411),rgba(0, 26, 173, 0.466));
+    background-color: var(--cor-de-fundo--);
+}
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cabecalho{
+    background-color: #00030c
+}
+.titulo__cabecalho{
+    font-size: 2em;
+    font-weight: 700vw;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif
+}
+/* cabeçalho */
+.cabecalho__navegacao-lista{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--branco);
+    list-style: none;
+    z-index: 1;
+}
+.cabecalho__logo{
+    justify-self: flex-start;
+    margin-right: 300px;
+}
+.logo{
+    justify-self: flex-start;
+    width: 150px;
+}
+.cabecalho__navegacao-item{
+    font-size: 1.3em;
+    padding: 1em 2em;
+    border: 2px solid var(--branco);
+    box-align: left 10px;
+}
+.cabecalho__navegacao-item:hover{
+    background-color: var(--azul);
+    border: 2px solid var(--preto);
+    border-radius: 10px;
+}
+.cabecalho__navegacao-link{
+    color: white;
+    text-decoration: none;
+}
+.navegation
+{
+    position: relative;
+    width: 400px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.navegation ul
+{
+    display: flex;
+    width: 300px;
+}
+.cabecalho ul li
+{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.cabecalho ul li a
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.cabecalho ul li a .icon
+{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.75s;
+    color: var(--clr);
+}
+.cabecalho ul li:hover a .icon
+{
+    transform: translateY(-30px);
+}
+.cabecalho ul li a .text
+{
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.cabecalho ul li:hover a .text
+{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.selecao{
+    padding: 0 0;
+    margin: 0 10px 0px 5px;
+    border-radius: 10px
+}
+.linguas{
+    width: 60px;
+    height: 40px;
+    list-style: none; 
+}
+.espaco{
+    margin-left: 2em;
+    font-family: 'Poppins';
+}
+
+/* titulo principal com imagem de fundo */
+
+.principal__container{
+    display:flex;
+    background-image: url(../img/brasil-bandeira.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+.principal__titulo{
+    grid-column: span 2;
+    width: fit-content;
+    font-size: 500%;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    margin:0 auto;
+    align-self: center;
+    position: relative;
+}
+.principal__titulo:hover{
+    text-decoration: none;
+}
+img{
+    height: 40%;
+    width: 30%;
+    box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.75)
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+} 
+/* conteudo da pagina */
+.texto__principal{
+    font-size: 28px;
+    font-weight: 700; 
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.principal__imagem{
+    margin: 1em 0 2em 0
+}
+.container__caixa{
+    margin: 0 6em;
+    text-align: center;
+}
+.secundario{
+    margin: 0 10em;
+}
+.secundario__imagem{
+    width: 100%;
+    height: auto;
+}
+.imagemTamanhoGrande{
+    grid-column: span 2;
+    width: 50%;
+    margin: 0 auto;
+}
+.descricao__titulo{
+    font-weight: 700;
+    color: var(--branco-principal);
+    font-size: 48px;
+    margin: 0.1em;
+    margin-left: 1.4em;
+}
+.descricao__titulo2{
+    font-weight: 700;
+    color: var(--branco-principal);
+    font-size: 48px;
+    margin: 0.1em;
+    margin-left: 0.5em;
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+    font-size: 32px
+}
+.espaco{
+    color: white;
+    font-size: 1.4em;
+    padding-left: 2em;
+    padding-right: 1em;
+    font-family: 'Poppins';
+}
+.letraG{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.cont{
+    background-color: var(--c);
+    color: white;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.rodape{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    bottom: 70;
+}
+.lista__rodape{
+   text-align: center;
+}
+.instituicao{
+    font-size: 2em;
+    text-align: center;
+}
+p {
+    grid-column: span 2;
+    padding-top: 2em;
+    font-family: 'Poppins';
+}
+.imagem__imagens{
+    width: 100%;
+    height: 100%;
+    margin: 2em 1em 2em 0;
+}
+
+.menu-lateral{
+    display: none;
+}
+.imagens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 3em;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 6em;
+}
+/*ultimo texto*/
+.Text_ult{
+    color: white;
+    font-size: 1.3vw;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-family: 'Poppins';
+}
+/*barrazinha lateral pika*/
+body::-webkit-scrollbar {
+    width: 12px;               /* largura da barra inteira */
+  }
+  body::-webkit-scrollbar-track {
+    background: #000;        /* cor do fundo da barra */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #fff;    /* cor do baguio q vai pra cima e pra baixo sla esqueci o nome */
+    border-radius: 20px;       /* tamanho da borda dessa porra */
+    border: 3px solid #fff;  /* cor da borda */
+  }
+@media (max-width: 992px)
+{
+  .principal__titulo
+  {
+    font-size:400%;
+  }
+  img
+  {
+      display: none;
+  }
+  .linguas{
+      display: block;
+  }
+  .imagem__imagens{
+      display: block;
+  }
+  .container
+  {
+    height: 50vh;
+    display: initial;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+.principal__container
+    {
+    display:flex;
+    background-image: url(../img/brasil-bandeira.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat
+    }
+    .cabecalho__navegacao-lista
+    {
+      width: 100%;
+      height: 100%
+    }
+}
+@media (max-width: 600px)
+{
+    ul li a
+    {
+      width: 100%;
+      height: 100%;
+      size: 100%;
+    }
+    .cabecalho ul li
+    {
+        width: 100%;
+        height: 100%;
+        size: 100%;
+    }
+}
+
+@media (max-width: 648px){
+
+    .cabecalho__navegacao-lista{
+        display:none;
+    }
+
+    .menu-lateral{
+        display: flex;
+        background-color: #000;
+    }
+
+    .lista__linguas{
+        display: flex;
+        position: absolute;
+        right: 0px;
+    }
+
+    .cabecalho__menu-hamburguer{
+        width: 48px;
+        height: 48px;
+        background-image: url(../img/Menu\ Aberto.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        background-color: black;
+        
+    }
+    .lista-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100vw;
+        background-color: black;
+    }
+    
+    .container__botao{
+        display: none;
+        
+    }
+    .container__botao:checked~.lista-menu{
+        display: block;
+        position: relative;
+    }
+    
+    .lista-menu__titulo,.lista-menu__item{
+        padding: 1em;
+        background-color: var(--branco);
+    }
+    
+    .lista-menu__titulo{
+        color: var(--laranja);
+        font-weight: 700;
+    }
+    
+    
+    .lista-menu__link{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+    }
+
+    .cabecalho{
+        background-color: black;
+    }
+
+    .titulo__cabecalho{
+        justify-self: flex-end;
+        margin-left: auto;
+        padding: 0.5em;
+    
+    }
+
+    .header{
+        justify-items: flex-end;
+    }
+}
+
